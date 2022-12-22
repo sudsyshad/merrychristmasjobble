@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Merry Christmas & Happy New Year from Jobble</title>
+  <style>
+    body {
+      background-color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .greeting {
+      font-size: 2em;
+      margin-top: 50px;
+      color: red;
+    }
+
+    .name {
+      font-size: 1.5em;
+      margin-top: 20px;
+      color: green;
+    }
+
+    .animated-text {
+      animation: text-animation 5s linear infinite;
+    }
+
+    @keyframes text-animation {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .snowflake {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Heavy_Dollar_Sign.svg/1200px-Heavy_Dollar_Sign.svg.png');
+      background-size: cover;
+      animation: snowfall 10s linear infinite;
+    }
+
+    @keyframes snowfall {
+      0% {
+        top: -50px;
+        left: 0;
+      }
+      100% {
+        top: 100%;
+        left: calc(50% + 50px * ((100vw - 50px) / 100vw - 1));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="greeting animated-text">Merry Christmas</div>
+  <div class="name animated-text">From Jobble</div>
+  <div class="greeting animated-text">Happy New Year</div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+  <div class="snowflake"></div>
+</body>
+</html>
